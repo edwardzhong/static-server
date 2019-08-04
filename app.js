@@ -3,11 +3,22 @@ const app = new koa()
 const static = require('koa-static')
 const favicon = require('koa-favicon')
 const path = require('path')
-const port = 3003;
+const port = 3001;
 
 // set static directiory
-app.use(static(__dirname));
+app.use(static(path.join(__dirname,'dist')));
 app.use(favicon(path.join(__dirname, 'favicon.jpg')));
+
+//if historyApiFallback mode
+// app.use(tpl({
+//     path: path.join(__dirname, 'dist')
+// }));
+
+// app.use(async (ctx, next) => {
+//     if(ctx.href.search('.js')< 0){
+//         ctx.render('index.html');
+//     }
+// });
 
 // deal 404
 app.use(async (ctx, next) => {

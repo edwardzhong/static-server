@@ -1,9 +1,10 @@
 {
-  "name": "static server",
+  "name": "static-server",
   "version": "1.0.0",
   "description": "node static server",
   "main": "app.js",
   "scripts": {
+    "dev": "node --inspect app",
     "start": "node app"
   },
   "keywords": [
