@@ -1,20 +1,20 @@
 {
-	"name": "static-server",
-	"version": "1.0.0",
-	"description": "node koa static server",
-	"main": "app.js",
-	"scripts": {
-		"dev": "node --inspect app",
-		"start": "node app"
-	},
-	"keywords": [
-		"koa"
-	],
-	"author": "JeffZhong",
-	"license": "MIT",
-	"dependencies": {
-		"koa": "^2.7.0",
-		"koa-favicon": "^2.0.1",
-		"koa-static": "^5.0.0"
-	}
+  "name": "static-server",
+  "version": "1.0.0",
+  "description": "node koa static server",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --inspect app",
+    "start": "node app"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "JeffZhong",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-favicon": "^2.0.1",
+    "koa-static": "^5.0.0"
+  }
 }
