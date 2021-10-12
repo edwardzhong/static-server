@@ -34,7 +34,7 @@ app.on('error', (err, ctx) => {
     //throw the error to frontEnd when in the develop mode
     ctx.res.end(err.stack); //finish the response
   } else {
-    ctx.render('Server Error');
+    ctx.body = { code: -1, message: "Server Error" };
   }
 });
 
