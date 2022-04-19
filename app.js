@@ -4,7 +4,7 @@ const static = require('koa-static');
 const favicon = require('koa-favicon');
 // const tpl = require('./tpl');
 const { join } = require('path');
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 // set static directiory
 app.use(static(join(__dirname, 'dist')));
